@@ -5,8 +5,8 @@
 #### **ciscan is a lightweight and efficient port scanner written in C. It is designed to help network administrators and security professionals quickly identify open ports on target machines, assisting in network assessments and vulnerability management.**
 
 ```bash
-MakeScan % make all
-MakeScan % ./ciscan <hostname> <lowerbound port> <upperbound port>
+tr41z % make all
+tr41z % ./ciscan <hostname> <lowerbound port> <upperbound port>
 
 ================================================
        _                         
