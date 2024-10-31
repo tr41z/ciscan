@@ -1,5 +1,10 @@
 # 🎯 ciscan
 
+<p align="center">
+       <img width="500" height="400" alt="Screenshot 2024-10-31 at 16 46 31" src="https://github.com/user-attachments/assets/7a9b6abc-91ed-4f9d-9489-35713cde63a0">
+       <img width="500" height="400" alt="Screenshot 2024-10-31 at 16 46 55" src="https://github.com/user-attachments/assets/345d1fa7-3eda-41e1-8a80-5dbba004945f">
+</p>
+
 ## ⚡ Introduction
 
 #### **ciscan is a lightweight and efficient port scanner written in C. It is designed to help network administrators and security professionals quickly identify open ports on target machines, assisting in network assessments and vulnerability management.**
