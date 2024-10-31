@@ -8,8 +8,15 @@
 MakeScan % make all
 MakeScan % ./ciscan <hostname> <lowerbound port> <upperbound port>
 
+================================================
+       _                         
+      (_)                        
+  ___  _  ___   ___  __ _  _ __  
+ / __|| |/ __| / __|/ _` || '_ \ 
+| (__ | |\__ \| (__| (_| || | | |
+ \___||_||___/ \___|\__,_||_| |_| 
+                                 
 © 2024 tr41z
-
 Language used: C
 Github Repo: https://github.com/tr41z/ciscan
 ================================================
