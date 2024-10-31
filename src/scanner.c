@@ -35,7 +35,7 @@ int establish_handshake(const char *hostname, int port) {
     servaddr.sin_addr.s_addr = inet_addr(hostname);
 
     if (connect(sockfd, (struct sockaddr*) &servaddr, sizeof(servaddr)) < 0) {
-        printf("Failed to connect to server on port: %i\n", port);
+        // printf("Failed to connect to server on port: %i\n", port);
         return 1;
     } else {
         printf("Connection successful on port: %i\n", port);

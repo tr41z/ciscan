@@ -1,8 +1,11 @@
 #include <stdio.h>
-#include "include/scanner.h"
 #include <stdlib.h>
+#include "include/scanner.h"
+#include "include/utils.h"
 
 int main(int argc, char **argv) {
+    display_menu();
+    
     if (argc < 4) {
         printf("Wrong flag format: ... <hostname> <port down> <port upper>\n");
         return 1;
