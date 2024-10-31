@@ -4,9 +4,7 @@
 void display_menu() {
     printf("================================================\n");
     ascii_title();
-    printf("© 2024 tr41z\n");
-    printf("Language used: C\n");
-    printf("Github Repo: https://github.com/tr41z/ciscan\n");
+    credits();
     printf("================================================\n\n");
 }
 
@@ -20,4 +18,10 @@ void ascii_title() {
        " \\___||_||___/ \\___|\\__,_||_| |_| \n"
        "                                 \n"
     );
+}
+
+void credits() {
+    printf("© 2024 tr41z\n");
+    printf("Language used: C\n");
+    printf("Github Repo: https://github.com/tr41z/ciscan\n");
 }

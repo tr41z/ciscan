@@ -3,5 +3,6 @@
 
 void display_menu();
 void ascii_title();
+void credits();
 
 #endif
