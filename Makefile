@@ -32,7 +32,7 @@ WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 all: $(APPNAME)
 
 run: 
-	./$(APPNAME) 127.0.0.1 8000 8100
+	./$(APPNAME) 127.0.0.1 1 6500
 
 # Builds the app
 $(APPNAME): $(OBJ)
