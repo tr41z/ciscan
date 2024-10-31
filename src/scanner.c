@@ -8,7 +8,9 @@
 #include "include/scanner.h"
 
 void scan_ports(const char *hostname, int portD, int portU) {
-    establish_handshake(hostname, 8080);
+    for (int i = portD; i <= portU; i++) {
+        establish_handshake(hostname, i);
+    }
     printf("Scanning ports for %s... in range %i - %i\n", hostname, portD, portU);
 }
 
@@ -28,8 +30,10 @@ int establish_handshake(const char *hostname, int port) {
     servaddr.sin_addr.s_addr = inet_addr(hostname);
 
     if (connect(sockfd, (struct sockaddr*) &servaddr, sizeof(servaddr)) < 0) {
-        perror("Failed to connect to server");
+        printf("Failed to connect to server on port: %i\n", port);
         return 1;
+    } else {
+        printf("Connection successful on port: %i\n", port);
     }
 
     close(sockfd);
