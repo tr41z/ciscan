@@ -7,11 +7,16 @@
 #include <arpa/inet.h>
 #include "include/scanner.h"
 
-void scan_ports(const char *hostname, int portD, int portU) {
-    for (int i = portD; i <= portU; i++) {
-        establish_handshake(hostname, i);
+void scan_ports(const char *hostname, int portL, int portU) {
+    int open_ports = 0;
+    
+    printf("Scanning ports for %s... in range %i - %i\n", hostname, portL, portU);
+
+    for (int i = portL; i <= portU; i++) {
+        if (establish_handshake(hostname, i) == 0) { open_ports++; }
     }
-    printf("Scanning ports for %s... in range %i - %i\n", hostname, portD, portU);
+
+    printf("Open ports found: %i\n", open_ports);
 }
 
 int establish_handshake(const char *hostname, int port) {

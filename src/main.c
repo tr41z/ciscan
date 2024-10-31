@@ -9,13 +9,13 @@ int main(int argc, char **argv) {
     }
 
     const char *hostname = argv[1];
-    const char *portD = argv[2];
+    const char *portL = argv[2];
     const char *portU = argv[3];
 
-    int portDown = atoi(portD);
+    int portLower = atoi(portL);
     int portUpper = atoi(portU);    
 
-    scan_ports(hostname, portDown, portUpper);
+    scan_ports(hostname, portLower, portUpper);
 
     return 0;
 }
